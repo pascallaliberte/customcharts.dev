@@ -13,6 +13,10 @@ layout: default
 Specializing in chart.js, d3 and raw svg. Also, Rails with Stimulus/Hotwire.
 {: .text-1xl.md:text-2xl.font-semibold.text-black/20.mt-3 }
 
+<div class="mt-4">
+<a class="cta-btn text-1xl px-4 py-1" href="#availability">Pre-purchase a week below</a>
+</div>
+
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
@@ -76,13 +80,15 @@ There are industries I won't serve. I won't serve the adult content industry. I 
 
 No calls. Async video screenshares, animated gifs, screenshots of course (annotated, even), text, links. So many better ways to communicate than on a live call.
 
+_That's it for the fine print._
+
 </section>
 
 Start here
 {: .text-1xl.md:text-2xl.font-black.text-black/20.mt-12.uppercase }
 
 ## Weeks available for pre-purchase
-{: .text-2xl.md:text-4xl.font-black.text-sequoia-800.mb-4.uppercase }
+{: #availability.text-2xl.md:text-4xl.font-black.text-sequoia-800.mb-4.uppercase }
 
 <a class="cta-btn text-2xl px-8 py-2" href="mailto:pascal@hey.com?subject%3DCustom%20Charts%20Developer%26body%3DHi%2C%0A%0AI%27d%20like%20to%20inquire%20about%20your%20next%20one-week%20block%20of%20availability%20to%20help%20me%20build%20a%20chart.">Inquire about the next available week</a>
 
@@ -93,5 +99,8 @@ Start here
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
 
 As I work on [supercharts.dev][supercharts], I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
+
+Why isn't there a chart on this page? Honestly, I couldn't think of a chart to add that wasn't lame. But with link to Twitter just above, you can see my latest work.
+{: .text-black/50.mt-8.text-sm }
 
 [supercharts]: https://supercharts.dev
