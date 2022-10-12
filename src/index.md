@@ -10,10 +10,13 @@ layout: default
 [Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
+Specializing in chart.js, d3 and raw svg. Also, Rails with Stimulus/Hotwire.
+{: .text-1xl.md:text-2xl.font-semibold.text-black/20.mt-3 }
+
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
-<article class="prose md:prose-lg" markdown="1">
+<section class="prose md:prose-lg" markdown="1">
 
 ## You're not going to code that chart
 
@@ -46,7 +49,7 @@ There's a shortage of fuss when it comes to online charts, and you're here to fi
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
-</article>
+</section>
 
 ## The Pitch
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800.mb-4 }
@@ -55,7 +58,7 @@ There's a shortage of fuss when it comes to online charts, and you're here to fi
 **Let's start with the fine print.**
 {: .text-1xl.mb-4 }
 
-<article class="prose" markdown="1">
+<section class="prose" markdown="1">
 
 For one week that your pre-purchase (availabilities listed below), I'll be around to code the chart you'd like.
 
@@ -73,7 +76,7 @@ There are industries I won't serve. I won't serve the adult content industry. I 
 
 No calls. Async video screenshares, animated gifs, screenshots of course (annotated, even), text, links. So many better ways to communicate than on a live call.
 
-</article>
+</section>
 
 ## Weeks available for pre-purchase
 {: .text-2xl.md:text-4xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
@@ -87,4 +90,3 @@ No calls. Async video screenshares, animated gifs, screenshots of course (annota
 As I work on [supercharts.dev][supercharts], I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
 
 [supercharts]: https://supercharts.dev
-
