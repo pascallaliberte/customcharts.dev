@@ -78,8 +78,13 @@ No calls. Async video screenshares, animated gifs, screenshots of course (annota
 
 </section>
 
+Start here
+{: .text-1xl.md:text-2xl.font-black.text-black/20.mt-12.uppercase }
+
 ## Weeks available for pre-purchase
-{: .text-2xl.md:text-4xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
+{: .text-2xl.md:text-4xl.font-black.text-sequoia-800.mb-4.uppercase }
+
+<a class="cta-btn text-2xl px-8 py-2" href="mailto:pascal@hey.com?subject%3DCustom%20Charts%20Developer%26body%3DHi%2C%0A%0AI%27d%20like%20to%20inquire%20about%20your%20next%20one-week%20block%20of%20availability%20to%20help%20me%20build%20a%20chart.">Inquire about the next available week</a>
 
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
