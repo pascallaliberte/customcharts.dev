@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './src/**/*.{html,md,liquid,erb,serb,rb}',
@@ -14,6 +15,9 @@ module.exports = {
         sequoia: {
           800: '#536a58',
         }
+      },
+      fontFamily: {
+        'sans': ['Recursive', ...defaultTheme.fontFamily.sans],
       },
     },
   },

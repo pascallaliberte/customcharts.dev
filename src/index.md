@@ -5,4 +5,7 @@ layout: default
 ---
 
 # Custom Charts Developer
-{: .text-3xl.font-bold.text-sequoia-800 }
+{: .text-6xl.font-black.text-sequoia-800 }
+
+[Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev](https://supercharts.dev)
+{: .text-3xl.font-semibold.text-black.mt-2 }
