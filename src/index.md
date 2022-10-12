@@ -52,7 +52,7 @@ There's a shortage of fuss when it comes to online charts, and you're here to fi
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800.mb-4 }
 
 
-Let's start with the fine print.
+**Let's start with the fine print.**
 {: .text-1xl.mb-4 }
 
 <article class="prose" markdown="1">
@@ -75,6 +75,14 @@ There are industries I won't serve. I won't serve the adult content industry. I 
 
 ## Weeks available for pre-purchase
 {: .text-2xl.md:text-4xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
+
+---
+{: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
+
+## See me build charts in public
+{: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
+
+As I work on [supercharts.dev][supercharts], I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
 
 [supercharts]: https://supercharts.dev
 
