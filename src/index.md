@@ -57,19 +57,21 @@ There's a shortage of fuss when it comes to online charts, and you're here to fi
 
 <article class="prose" markdown="1">
 
-For one week that your pre-purchase, I'll be around to code the chart you'd like.
+For one week that your pre-purchase (availabilities listed below), I'll be around to code the chart you'd like.
 
 You'll provide a sample of the data (csv is best, could be json), or samples of data for different states of the chart.
 
 I'll code the chart on a separate project, in a private repo on my GitHub account to which I'll invite you. It'll be MIT licensed which means we both can re-use the code. I'm doing this as a simple way to protect us both. A rendered preview will be available at a private URL. I can show you tips on how to integrate the new chart code into your app, but that's on you.
 
-We will communicate via GitHub Issues and via a GitHub project. You can create as many issues as you like, but only one of them will be in the To-Do pile. Then it'll go in the To Review pile for you to sign off on. When the issue is done, we'll decide on a new one for the To-Do pile.
+We will communicate via GitHub Issues and via a GitHub project. You can create as many issues as you like, but only one of them will be in the To-Do pile. Then it'll go in the To Review pile for you to sign off on. When the issue is done, we'll decide on a new one for the To-Do pile. I might throw in other tools depending on the job, like ZipMessage or Basecamp.
 
-This means you'll be around that week. We'll make small to-dos that I can turn around within a day for you to review and sign-off on. This service isn't for you if you can't provide quick turnaround on your end as on mine. I only take a few clients per week so I can provide a quick turnaround.
+This means you'll be around that week. We'll make small to-dos that I can turn around within a day for you to review and sign-off on. This service isn't for you if you can't provide quick turnaround on your end as on mine. I only take a few clients per week so I can provide a quick turnaround too.
 
 The chart will either be in chart.js (canvas), in d3 (svg) or in plain svg or html format (sometimes that's good enough). I will wrap the code to generate the chart in a Stimulus controller, and maybe even a turbo-frame (a really nice trick I use for the [supercharts.dev][supercharts] I'm making). I won't write anything in React. If some server-side code needs to be written, it'll be in Ruby and assuming it'll land in a Rails project. I like to deliver as little JavaScript as possible.
 
 There are industries I won't serve. I won't serve the adult content industry. I won't serve the crypto industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work.
+
+No calls. Async video screenshares, animated gifs, screenshots of course (annotated, even), text, links. So many better ways to communicate than on a live call.
 
 </article>
 
