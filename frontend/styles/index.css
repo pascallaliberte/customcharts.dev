@@ -14,6 +14,10 @@
   }
   
   a.cta-btn {
-    @apply no-underline text-white bg-coast-700 border border-4 border-white;
+    @apply no-underline text-white bg-coast-500 border border-4 border-white transition-colors ;
+  }
+  
+  a.cta-btn:hover, a.cta-btn:active {
+    @apply bg-coast-700;
   }
 }
