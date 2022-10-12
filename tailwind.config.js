@@ -14,6 +14,9 @@ module.exports = {
         },
         sequoia: {
           800: '#536a58',
+        },
+        coast: {
+          700: '#476884'
         }
       },
       fontFamily: {
