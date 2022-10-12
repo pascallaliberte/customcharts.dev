@@ -52,7 +52,7 @@ There's a shortage of fuss when it comes to online charts, and you're here to fi
 </section>
 
 ## The Pitch
-{: .text-4xl.md:text-6xl.font-black.text-sequoia-800.mb-4 }
+{: .text-4xl.md:text-6xl.font-black.text-sequoia-800.mb-4.-ml-1.md:-ml-2 }
 
 
 **Let's start with the fine print.**
