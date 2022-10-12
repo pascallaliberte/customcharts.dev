@@ -127,7 +127,7 @@ Start here
 
 As I work on [supercharts.dev][supercharts], I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
 
-Why isn't there a chart on this page? Honestly, I couldn't think of a chart to add that wasn't lame. But with link to Twitter just above, you can see my latest work.
+Why isn't there a chart on this page? Honestly, I couldn't think of a chart to add that wasn't lame. But with the link to Twitter just above, you can see my latest work.
 {: .text-black/50.mt-8.text-sm }
 
 [supercharts]: https://supercharts.dev
