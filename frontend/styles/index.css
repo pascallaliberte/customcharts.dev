@@ -13,11 +13,11 @@
     @apply underline underline-offset-2 bg-rose-100;
   }
   
-  a.cta-btn {
+  .cta-btn {
     @apply no-underline text-white bg-coast-500 border border-4 border-white transition-colors inline-block;
   }
   
-  a.cta-btn:hover, a.cta-btn:active {
+  .cta-btn:hover, .cta-btn:active {
     @apply bg-coast-700;
   }
 }
