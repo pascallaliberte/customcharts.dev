@@ -1,0 +1,3 @@
+[build]
+  publish = "output/"
+  command = "bin/bridgetown deploy"
