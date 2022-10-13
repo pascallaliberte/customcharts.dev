@@ -10,7 +10,7 @@ layout: default
 [Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
-Specializing in chart.js, d3 and raw svg. Also, Rails with Stimulus/Hotwire.
+Specializing in chart.js, d3 and raw svg.<br>Also, Rails with Stimulus/Hotwire.
 {: .text-1xl.md:text-2xl.font-semibold.text-black/20.mt-3 }
 
 <div class="mt-4">
