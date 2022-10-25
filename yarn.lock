@@ -144,6 +144,14 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@supercharts/stimulus-base@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@supercharts/stimulus-base/-/stimulus-base-0.1.4.tgz#7c783fd7a994e11945ca1c001095b17a852ed4ac"
+  integrity sha512-CRznR863nYu4F78Si53QaT15enxfy+fjp+YgBPP0lZJMKnkO5shTAV8nNsYzAPfi9fr4+KLdQ1bT/pPs/fx9Vg==
+  dependencies:
+    "@hotwired/stimulus" "^3.1.0"
+    chart.js "^3.9.1"
+
 "@tailwindcss/typography@^0.5.7":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.7.tgz#e0b95bea787ee14c5a34a74fc824e6fe86ea8855"
@@ -241,6 +249,11 @@ caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001407:
   version "1.0.30001418"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001418.tgz#5f459215192a024c99e3e3a53aac310fc7cf24e6"
   integrity sha512-oIs7+JL3K9JRQ3jPZjlH6qyYDp+nBTCais7hjh0s+fuBwufc7uZ7hPYMXrDOJhV360KGMTcczMRObk0/iMqZRg==
+
+chart.js@^3.9.1:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.9.1.tgz#3abf2c775169c4c71217a107163ac708515924b8"
+  integrity sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w==
 
 chokidar@^3.5.3:
   version "3.5.3"
