@@ -32,7 +32,12 @@ It was on your list, but it's been put off to later.
 
 But now, "later" is coming up "soon".
 
-![chart of today, deadline, chart?](/images/chart-deadline-chart.svg)
+<div class="-ml-8 md:hidden" markdown="1">
+  ![chart of today, deadline, chart?](/images/chart-deadline-chart.svg#svgView(viewBox(350, 10, 200, 150)))
+</div>
+<div class="hidden md:block" markdown="1">
+  ![chart of today, deadline, chart?](/images/chart-deadline-chart.svg)
+</div>
 
 ## "I just have too many specialties to master"
 
@@ -86,7 +91,7 @@ Your high taste is found everywhere throughout your app, but the charts don't ma
 For one week that your pre-purchase (availabilities listed below), I'll be around to code the chart you'd like.
 
 * It'll be coded in chart.js, or in d3.js, or in raw svg+html
-* It'll be outside your codebase, I'll invite you on a repo I'll create on my GitHub accoun t
+* It'll be outside your codebase, I'll invite you on a repo I'll create on my GitHub account
 * It'll be licensed MIT on that repo, but the repo will be private between the two of us
 * You drive the decisions, I implement and I make it good
 * We will communicate over GitHub issues and a GitHub project
