@@ -32,7 +32,7 @@ It was on your list, but it's been put off to later.
 
 But now, "later" is coming up "soon".
 
-![chart of today, deadline, chart?]()
+![chart of today, deadline, chart?](/images/chart-deadline-chart.svg)
 
 ## "I just have too many specialties to master"
 
@@ -50,6 +50,8 @@ On your project, you have to wear all the hats. You go deep on all these topics.
 ### What's been OUT
 
 * Charts: styled, performant, clear, well-coded
+
+It's time for charts to go back in the IN section.
 
 <div class="mt-4">
 <a class="cta-btn text-1xl px-4 py-1 text-white no-underline" href="#availability">See when I'm available...</a>
@@ -79,7 +81,7 @@ Your high taste is found everywhere throughout your app, but the charts don't ma
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
 ## Let's try a week together
-{: #availability.text-4xl.md:text-6xl.font-black.text-sequoia-800.mb-4.-ml-1.md:-ml-2 }
+{: #availability.text-3xl.md:text-6xl.font-black.text-sequoia-800.mb-4.-ml-1.md:-ml-2 }
 
 For one week that your pre-purchase (availabilities listed below), I'll be around to code the chart you'd like.
 
@@ -152,7 +154,7 @@ Your main involvement: provide to-dos and review the work.
 
 ### At _every_ point during the week
 
-* **You will be available for reviewing the work, providing new to-dos**
+* **You will be available for reviewing the work, providing new to-dos**. I only work on one to-do at a time, and will put it in the "To Review" column when done.
 
 ### _A month after_ the week has ended
 
