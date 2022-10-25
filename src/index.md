@@ -64,7 +64,7 @@ It's time for charts to go back in the IN section.
 
 ## The project has been piling on the responsibilities...
 
-![Chart of responsabilities growing]()
+<%= render "pressure_chart" %>
 
 ## Too many "I'll just"
 
