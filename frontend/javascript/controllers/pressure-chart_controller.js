@@ -15,15 +15,10 @@ export default class extends SuperchartChartjsController {
     '--axis-color': '#999',
     '--grid-color': '#eee',
     '--line-color': '#aaa',
-    '--point-color': '#333',
-    '--point-stroke-color': '#fff',
-    '--point-stroke-color-hover': '#eee',
-    '--bar-fill-color': '#999',
-    '--bar-hover-fill-color': '#333',
-    '--point-radius': 6,
-    '--point-hover-radius': 10,
-    '--point-border-width': 4,
-    '--point-hover-border-width': 3,
+    '--point-color': '#fff',
+    '--point-stroke-color': 'transparent',
+    '--point-radius': 2,
+    '--point-border-width': 0,
   }
   
   connect() {
@@ -49,12 +44,18 @@ export default class extends SuperchartChartjsController {
     
     this.parseCsvData()
     
+    const skipped = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined
+    
     return {
       labels: this.csvData.map(d => d[this.csvData.columns[0]]),
       datasets: [{
         type: this.typeValue,
         label: "Value",
-        data: this.csvData.map(d => d[this.csvData.columns[2]])
+        data: this.csvData.map(d => d[this.csvData.columns[1]]),
+        segment: {
+          borderColor: ctx => skipped(ctx, 'rgb(0,0,0,0.2)'),
+          borderDash: ctx => skipped(ctx, [6, 6]),
+        },
       }]
     }
   }
@@ -109,6 +110,11 @@ export default class extends SuperchartChartjsController {
   // You can set default options in this getter for all your charts.
   get defaultOptions() {
     const axisColor = this.cssPropertyValue('--axis-color')
+    const font = {
+      family: "'Recursive', sans-serif",
+      size: 12
+    }
+    
     return {
       maintainAspectRatio: false,
       animation: this.animationOptions,
@@ -137,40 +143,30 @@ export default class extends SuperchartChartjsController {
       borderJoinStyle: "miter",
       pointBorderColor: this.cssPropertyValue('--point-stroke-color'),
       pointBackgroundColor: this.cssPropertyValue('--point-color'),
-      pointHoverBackgroundColor: this.cssPropertyValue('--point-color'),
-      pointHoverBorderColor: this.cssPropertyValue('--point-stroke-color-hover'),
       pointRadius: Number(this.cssPropertyValue('--point-radius')),
-      pointHoverRadius: Number(this.cssPropertyValue('--point-hover-radius')),
-      pointBorderWidth: Number(this.cssPropertyValue('--point-border-width')),
-      pointHoverBorderWidth: Number(this.cssPropertyValue('--point-hover-border-width')),
-      pointHitRadius: 10,
       backgroundColor: this.cssPropertyValue('--bar-fill-color'),
       hoverBackgroundColor: this.cssPropertyValue('--bar-hover-fill-color'),
-      spanGaps: false,
+      spanGaps: true,
       scales: {
         x: {
           grid: {
-            color: this.cssPropertyValue('--grid-color'),
-            borderColor: axisColor,
-            tickColor: axisColor,
+            display: false
           },
           ticks: {
             color: axisColor,
-            tickColor: axisColor
+            tickColor: axisColor,
+            font: font
           }
         },
         y: {
           grid: {
-            color: this.cssPropertyValue('--grid-color'),
-            borderColor: axisColor,
-            tickColor: axisColor,
+            display: false
           },
           ticks: {
-            color: axisColor,
-            tickColor: axisColor
+            display: false
           },
-          suggestedMin: 0,
-          suggestedMax: 10
+          min: 0,
+          max: 100
         }
       }
     }

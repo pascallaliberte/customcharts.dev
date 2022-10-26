@@ -31,6 +31,7 @@ export default class extends Controller {
     }
     
     this.font.load().then(() => {
+      console.log(`${fontFamily} font loaded`)
       this.dispatch(this.fontLoadedEventNameValue)
     });
   }
