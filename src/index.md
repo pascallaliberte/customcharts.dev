@@ -7,7 +7,7 @@ layout: default
 # Custom Charts Developer
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800 }
 
-[Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
+![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
 Availabilities in the next few weeks
