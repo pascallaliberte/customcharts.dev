@@ -7,11 +7,15 @@ export default class extends SuperchartChartjsController {
     type: { 
       type: String,
       default: "line"
+    },
+    showAlternateScenario: {
+      type: Boolean,
+      default: false
     }
   }
   
   static defaultCssProperties = {
-    '--animation-duration': 200, // milliseconds
+    '--animation-duration': 1000, // milliseconds
     '--axis-color': '#999',
     '--grid-color': '#eee',
     '--line-color': '#aaa',
@@ -22,6 +26,7 @@ export default class extends SuperchartChartjsController {
   }
   
   connect() {
+    this.runAnimations = false
     super.connect()
   }
   
@@ -31,6 +36,7 @@ export default class extends SuperchartChartjsController {
   
   parseCsvData() {
     this.csvData = d3.csvParse(this.csvDataTarget.innerHTML.trim(), d3.autoType)
+    this.indexFirstPointAlternateScenario = this.csvData.map(d => d[this.csvData.columns[2]]).findIndex(v => v !== null)
   }
   
   get chartjsData() {
@@ -46,9 +52,8 @@ export default class extends SuperchartChartjsController {
     
     const skipped = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined
     
-    return {
-      labels: this.csvData.map(d => d[this.csvData.columns[0]]),
-      datasets: [{
+    let datasets = [
+      {
         type: this.typeValue,
         label: "Value",
         data: this.csvData.map(d => d[this.csvData.columns[1]]),
@@ -56,7 +61,24 @@ export default class extends SuperchartChartjsController {
           borderColor: ctx => skipped(ctx, 'rgb(0,0,0,0.2)'),
           borderDash: ctx => skipped(ctx, [6, 6]),
         },
-      }]
+      }
+    ]
+    
+    if (this.showAlternateScenarioValue) {
+      datasets.push({
+        type: this.typeValue,
+        label: "Value",
+        display: this.showAlternateScenarioValue,
+        data: this.csvData.map(d => d[this.csvData.columns[2]]),
+        segment: {
+          borderColor: '#fff',
+        },
+      })
+    }
+    
+    return {
+      labels: this.csvData.map(d => d[this.csvData.columns[0]]),
+      datasets: datasets
     }
   }
   
@@ -77,6 +99,7 @@ export default class extends SuperchartChartjsController {
   
   get animationOptions() {
     if (this.runAnimations === false) { return false }
+    
     return {
       x: {
         type: 'number',
@@ -84,24 +107,28 @@ export default class extends SuperchartChartjsController {
         duration: this.delayBetweenPoints,
         from: NaN, // the point is initially skipped
         delay: (ctx) => {
-          if (ctx.type !== 'data' || ctx.xStarted) {
+          if (ctx.datasetIndex === 0 || ctx.type !== 'data' || ctx.xStarted || ctx.index < this.indexFirstPointAlternateScenario) {
             return 0;
           }
+          
           ctx.xStarted = true;
-          return ctx.index * this.delayBetweenPoints;
+          
+          return (ctx.index - 15) * this.delayBetweenPoints;
         }
       },
       y: {
         type: 'number',
         easing: 'linear',
         duration: this.delayBetweenPoints,
-        from: previousY,
+        from: NaN,
         delay: (ctx) => {
-          if (ctx.type !== 'data' || ctx.yStarted) {
+          if (ctx.datasetIndex === 0 || ctx.type !== 'data' || ctx.yStarted || ctx.index < this.indexFirstPointAlternateScenario) {
             return 0;
           }
+          
           ctx.yStarted = true;
-          return ctx.index * this.delayBetweenPoints;
+          
+          return (ctx.index - 15) * this.delayBetweenPoints;
         }
       }
     }
@@ -135,7 +162,7 @@ export default class extends SuperchartChartjsController {
       },
       color: axisColor,
       fill: false,
-      lineTension: 0.3,
+      lineTension: 0,
       borderColor: this.cssPropertyValue('--line-color'),
       borderCapStyle: "butt",
       borderDash: [],
@@ -174,6 +201,12 @@ export default class extends SuperchartChartjsController {
   
   get delayBetweenPoints() {
     return this.cssPropertyValue('--animation-duration') / this.chartjsData?.datasets[0]?.data?.length
+  }
+  
+  showAlternateScenarioValueChanged() {
+    this.runAnimations = true
+    this.updateChart()
+    this.runAnimations = false
   }
 }
 
