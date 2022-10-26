@@ -277,6 +277,14 @@ export default class extends SuperchartChartjsController {
     this.updateChart()
     this.runAnimations = false
   }
+  
+  toggleAlternateScenario(event) {
+    if (event?.detail?.toggle === undefined) {
+      return
+    }
+    
+    this.showAlternateScenarioValue = event.detail.toggle
+  }
 }
 
 function previousY (ctx) {

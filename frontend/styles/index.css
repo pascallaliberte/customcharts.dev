@@ -20,4 +20,8 @@
   .cta-btn:hover, .cta-btn:active {
     @apply bg-coast-700;
   }
+  
+  body {
+    --sl-input-font-family: 'Recursive';
+  }
 }

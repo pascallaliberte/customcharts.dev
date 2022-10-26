@@ -1,39 +1,51 @@
-<div
-  class="-mx-6 my-6 p-6 bg-sequoia-800 rounded-md border border-white border-2
-  [--chart-height:200px] md:[--chart-height:300px]
-  [--grid-color:theme('colors.black')]
+<div class="
+  [--sl-color-primary-600:theme('colors.sequoia.800')]
+  [--sl-color-neutral-400:theme('colors.ochre.400')]
   "
-  data-controller="pressure-chart"
-  data-pressure-chart-type-value="line"
-  data-pressure-chart-show-alternate-scenario-value="false"
-  data-action="fonts:fonts-loaded@window->pressure-chart#updateChart"
-  markdown="0"
+  data-controller="toggle"
 >
-  <canvas data-pressure-chart-target="chartjsCanvas" style="height: var(--chart-height)">
-    Chart of responsibilities growing
-  </canvas>
-  <template data-pressure-chart-target="csvData" >
-    weeks_since,pressure,pressure_relieved_by
-    15,0,
-    14,12,
-    13,36,
-    12,32,
-    11,24,
-    10,23,
-    9,25,
-    8,24,
-    7,23,
-    6,28,
-    5,35,
-    4,44,
-    3,58,
-    2,64,
-    1,73,
-    0,82,82
-    1,,40
-    2,,41
-    3,,42
-    4,98,43
-  </template>
-  <template data-pressure-chart-target="chartjsOptions"></template>
+  <div
+    class="-mx-6 my-6 p-6 bg-sequoia-800 rounded-md border border-white border-2
+    [--chart-height:200px] md:[--chart-height:300px]
+    [--grid-color:theme('colors.black')]
+    "
+    data-controller="pressure-chart"
+    data-pressure-chart-type-value="line"
+    data-pressure-chart-show-alternate-scenario-value="false"
+    data-action="fonts:fonts-loaded@window->pressure-chart#updateChart toggle:toggle->pressure-chart#toggleAlternateScenario"
+    data-toggle-target="toggleable"
+    markdown="0"
+  >
+    <canvas data-pressure-chart-target="chartjsCanvas" style="height: var(--chart-height)">
+      Chart of responsibilities growing
+    </canvas>
+    <template data-pressure-chart-target="csvData" >
+      weeks_since,pressure,pressure_relieved_by
+      15,0,
+      14,12,
+      13,36,
+      12,32,
+      11,24,
+      10,23,
+      9,25,
+      8,24,
+      7,23,
+      6,28,
+      5,35,
+      4,44,
+      3,58,
+      2,64,
+      1,73,
+      0,82,82
+      1,,40
+      2,,41
+      3,,42
+      4,98,43
+    </template>
+    <template data-pressure-chart-target="chartjsOptions"></template>
+  </div>
+  
+  <div class="text-right">
+    <sl-switch data-action="sl-change->toggle#catchChecked">With Pascal's Help</sl-switch>
+  </div>
 </div>
