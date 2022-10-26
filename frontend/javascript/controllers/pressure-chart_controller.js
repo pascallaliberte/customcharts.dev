@@ -15,7 +15,7 @@ export default class extends SuperchartChartjsController {
   }
   
   static defaultCssProperties = {
-    '--animation-duration': 1000, // milliseconds
+    '--animation-duration': 600, // milliseconds
     '--axis-color': '#999',
     '--grid-color': '#eee',
     '--line-color': '#aaa',
