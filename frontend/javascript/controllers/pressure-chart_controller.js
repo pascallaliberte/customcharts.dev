@@ -1,5 +1,8 @@
-import { SuperchartChartjsController, parseContentsAsJSON } from '@supercharts/stimulus-base'
+import { SuperchartChartjsController, parseContentsAsJSON, Chartjs } from '@supercharts/stimulus-base'
 import * as d3 from "d3"
+import annotationPlugin from 'chartjs-plugin-annotation';
+
+Chartjs.register(annotationPlugin);
 
 export default class extends SuperchartChartjsController {
   static targets = [ "chartjsOptions", "chartjsData", "chartjsCanvas", "csvData" ]
@@ -61,6 +64,7 @@ export default class extends SuperchartChartjsController {
           borderColor: ctx => skipped(ctx, 'rgb(0,0,0,0.2)'),
           borderDash: ctx => skipped(ctx, [6, 6]),
         },
+        z: 1,
       }
     ]
     
@@ -73,6 +77,7 @@ export default class extends SuperchartChartjsController {
         segment: {
           borderColor: '#fff',
         },
+        z: 2,
       })
     }
     
@@ -158,6 +163,69 @@ export default class extends SuperchartChartjsController {
         tooltip: {
           enabled: false,
           position: 'nearest'
+        },
+        autocolors: false,
+        annotation: {
+          annotations: {
+            // line1: {
+            //   type: 'line',
+            //   yMin: 60,
+            //   yMax: 60,
+            //   borderColor: 'rgb(255, 99, 132)',
+            //   borderWidth: 2,
+            //   z: 0,
+            // },
+            redZone: {
+              drawTime: 'beforeDatasetsDraw',
+              type: 'box',
+              xMin: 0,
+              xMax: 19,
+              yMin: 60,
+              yMax: 100,
+              backgroundColor: 'rgba(255, 99, 132, 0.10)',
+              z: 0,
+            },
+            yellowZone: {
+              drawTime: 'beforeDatasetsDraw',
+              type: 'box',
+              xMin: 0,
+              xMax: 19,
+              yMin: 50,
+              yMax: 60,
+              backgroundColor: 'rgba(255, 255, 0, 0.10)',
+              z: 0,
+            },
+            todayLine: {
+              type: 'line',
+              borderColor: 'white',
+              borderWidth: 2,
+              borderDash: [6, 6],
+              label: {
+                backgroundColor: 'transparent',
+                content: 'Today',
+                display: true,
+                font: font
+              },
+              position: 'end',
+              scaleID: 'x',
+              value: 15
+            },
+            deadLine: {
+              type: 'line',
+              borderColor: 'white',
+              borderWidth: 2,
+              borderDash: [6, 6],
+              label: {
+                backgroundColor: 'transparent',
+                content: 'Deadline',
+                display: true,
+                font: font
+              },
+              position: 'end',
+              scaleID: 'x',
+              value: 19
+            }
+          }
         }
       },
       color: axisColor,
