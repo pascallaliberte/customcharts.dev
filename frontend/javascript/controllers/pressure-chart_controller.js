@@ -245,17 +245,18 @@ export default class extends SuperchartChartjsController {
       scales: {
         x: {
           grid: {
-            display: false
+            display: false,
+            borderColor: 'transparent'
           },
           ticks: {
-            color: axisColor,
-            tickColor: axisColor,
-            font: font
-          }
+            display: false
+          },
+          borderColor: 'red',
         },
         y: {
           grid: {
-            display: false
+            display: false,
+            borderColor: 'transparent'
           },
           ticks: {
             display: false
