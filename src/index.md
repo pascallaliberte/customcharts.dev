@@ -7,10 +7,10 @@ layout: default
 # Custom Charts Developer
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800 }
 
-[Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
+![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
-Specializing in chart.js, d3 and raw svg.<br>Also, Rails with Stimulus/Hotwire.
+Availabilities in the next few weeks
 {: .text-1xl.md:text-2xl.font-semibold.text-black/20.mt-3 }
 
 <div class="mt-4">
@@ -20,74 +20,89 @@ Specializing in chart.js, d3 and raw svg.<br>Also, Rails with Stimulus/Hotwire.
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
-<section class="prose md:prose-lg" markdown="1">
+<div markdown="1" data-controller="purchasable-services">
 
-## You're not going to code that chart
+<section class="prose md:prose-lg marker:text-black/20" markdown="1">
 
-It's not that you're busy with other things with the app you're building, but you are feeling the deadlines, so maybe a little bit too busy.
+## You've been avoiding going deep on the UX and styling of charts
 
-It's not that you're allergic to the front-end, but you kind of are.
+The whole chart aspect of your project has so far been falling behind on everything else...
 
-So that chart won't write itself.
+It was on your list, but it's been put off to later.
 
-## You've played with the charting libraries
+But now, "later" is coming up "soon".
 
-But they're all a little bland, a little too much like all the other ones.
+<div class="-ml-8 md:hidden" markdown="1">
+  ![chart of today, deadline, chart?](/images/chart-deadline-chart.svg#svgView(viewBox(350, 10, 200, 150)))
+</div>
+<div class="hidden md:block" markdown="1">
+  ![chart of today, deadline, chart?](/images/chart-deadline-chart.svg)
+</div>
 
-And then you know there's this way to do all custom, but oh man the learning curve.
+## "I just have too many specialties to master"
 
-## But you'd still like to learn...
+On your project, you have to wear all the hats. You go deep on all these topics. But your involvement with charts has stayed superficial. No choice!
 
-**Tell you what.** How about I code up a chart or two for you, and I show you how I did it, what tweaks you can make, how to plug it into your data set?
+### What's been IN
 
-## And you'd like the chart to be pretty...
+* Domain modelling
+* UI, Flows, Onboarding
+* Testing, CI
+* DB Performance
+* Product-Market Fit
+* Landing Pages, Content Strategy
 
-You're looking for something that stands out, matches your look, gets the details right.
+### What's been OUT
 
-How about you drive the "to-my-taste" department and I'll drive the "code-it-for-you" department?
+* Charts: styled, performant, clear, well-coded
 
-## Maximum fuss please
+It's time for charts to go back in the IN section.
 
-There's a shortage of fuss when it comes to online charts, and you're here to fix that. I'm here to fix that too. How about we partner up on that mission?
+<div class="mt-4">
+<a class="cta-btn text-1xl px-4 py-1 text-white no-underline" href="#availability">See when I'm available...</a>
+</div>
+
+## The project has been piling on the responsibilities...
+
+<%= render "pressure_chart" %>
+
+## Too many "I'll just"
+
+You've crossed those first chart-related to-dos off your list, but there were too many "I'll just"
+
+* "I'll just use chart.js, **but the animations are off-putting**"
+* "I'll just load that data set on a view property, **but it's slowing down the time-to-first-byte**"
+* "I'll just settle for a multi-line chart **but there should be a clearer way to present this**"
+
+Your high taste is found everywhere throughout your app, but the charts don't match that taste.
+
+## You're ready to fuss on the details, but the learning curve...
+
+* If only you had **someone to help you learn the ropes**, just more quickly...
+* If only you had **the code for one perfect chart**, you could do the same for all the others...
+* If only you had **something pretty close that you could tweak**...
 
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
-</section>
-
-## The Pitch
-{: .text-4xl.md:text-6xl.font-black.text-sequoia-800.mb-4.-ml-1.md:-ml-2 }
-
-
-**Let's start with the fine print.**
-{: .text-1xl.mb-4 }
-
-<section class="prose" markdown="1">
+## Let's try a week together
+{: #availability.text-3xl.md:text-6xl.font-black.text-sequoia-800.mb-4.-ml-1.md:-ml-2 }
 
 For one week that your pre-purchase (availabilities listed below), I'll be around to code the chart you'd like.
 
-You'll provide a sample of the data (csv is best, could be json), or samples of data for different states of the chart.
-
-I'll code the chart on a separate project, in a private repo on my GitHub account to which I'll invite you. It'll be MIT licensed which means we both can re-use the code. I'm doing this as a simple way to protect us both. A rendered preview will be available at a private URL. I can show you tips on how to integrate the new chart code into your app, but that's on you.
-
-We will communicate via GitHub Issues and via a GitHub project. You can create as many issues as you like, but only one of them will be in the To-Do pile. Then it'll go in the To Review pile for you to sign off on. When the issue is done, we'll decide on a new one for the To-Do pile. I might enable other communication tools depending on the job, like ZipMessage or Basecamp.
-
-This means you'll be around that week. We'll make small to-dos that I can turn around within a day for you to review and sign-off on. This service isn't for you if you can't provide quick turnaround on your end as on mine. I only take a few clients per week so I can provide a quick turnaround too.
-
-The chart will either be in chart.js (canvas), in d3 (svg) or in plain svg or html format (sometimes that's good enough). I will wrap the code to generate the chart in a Stimulus controller, and maybe even a turbo-frame (a really nice trick I use for the [supercharts.dev][supercharts] I'm making). I won't write anything in React. If some server-side code needs to be written, it'll be in Ruby and assuming it'll land in a Rails project. I like to deliver as little JavaScript as possible.
-
-There are industries I won't serve. I won't serve the adult content industry. I won't serve the cryptocurrency/NFT industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work.
-
-No calls. Async video screenshares, animated gifs, screenshots, text only links: so many better ways to communicate than on a live call.
-
-_That's it for the fine print._
+* It'll be coded in chart.js, or in d3.js, or in raw svg+html
+* It'll be outside your codebase, I'll invite you on a repo I'll create on my GitHub account
+* It'll be licensed MIT on that repo, but the repo will be private between the two of us
+* You drive the decisions, I implement and I make it good
+* We will communicate over GitHub issues and a GitHub project
+* I'll have a private URL previewing the chart
+* You'll provide a sample of the data, or I'll prepare some random data (say, to match a sketch you provide)
 
 </section>
 
+
 Start here
 {: .text-1xl.md:text-2xl.font-black.text-black/20.mt-12.uppercase }
-
-<div markdown="1" data-controller="purchasable-services">
 
 <div markdown="1"
   data-controller="purchasable-service"
@@ -96,7 +111,7 @@ Start here
 >
 
 ## Weeks available for pre-purchase
-{: #availability.text-2xl.md:text-4xl.font-black.text-sequoia-800.mb-4.uppercase }
+{: .text-2xl.md:text-4xl.font-black.text-sequoia-800.mb-4.uppercase }
 
 <div markdown="1" data-purchasable-service-target="buttons">
 
@@ -117,17 +132,86 @@ Start here
 
 </div>
 
-</div>
+<section class="mt-10 prose md:prose-lg marker:text-black/20" markdown="1">
+
+## Here's how the week could look like
+{: .!mb-0.mt-8 }
+
+Your main involvement: provide to-dos and review the work.
+{: .mt-2.text-1xl.md:text-2xl.font-semibold.text-black/20 }
+
+**On Monday**, I'll ask you to add a to-do. Something specific that can get the ball rolling so that...
+
+**On Tuesday**, you'll get a note about the first task being done, for you to review. For the next tweak, I'll ask you to make a new to-do, and I'll get on it.
+
+**On Wednesday**, another to-do done for you to review, we'll probably turn our attention to one specific aspect of the chart, because we'll enter the home stretch...
+
+**On Thursday**, a small tweak or two are in, you approve or make another to-do for the next thing...
+
+**On Friday**, another small to-do or two are done for your review, and we're wrapping it up. I'll send you a zip file of the code and the preview output.
+
+### At any point during the week
+
+* You have access to the code and the chart preview
+* You can add to-dos in the "For Consideration" column. Only one to-do will be in the "To-do" column at a time.
+* You can provide sketches, data samples
+* You can upload videos of your screen, which are quick to record
+
+### At _every_ point during the week
+
+* **You will be available for reviewing the work, providing new to-dos**. I only work on one to-do at a time, and will put it in the "To Review" column when done.
+
+### _A month after_ the week has ended
+
+* I'll close down the repo and shut down the preview URL
+
+### Some fine print
+
+There are industries I won't serve. I won't serve the adult content industry. I won't serve the cryptocurrency/NFT industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work.
+
+Also, I won't sign an NDA or a non-compete for my work in this by-the-week service.
+
+</section>
 
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
+## The secret menu
+{: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
+
+**If you'd like to partner up on a bigger project**, where getting the charts right will create revenue or reduce costs, will depend on a strong ability to craft good user experiences and understanding buyer motivation (jobs-to-be-done)...
+
+<div markdown="1"
+  data-controller="purchasable-service"
+  data-action="service-ladder:ready@document->purchasable-service#adjustPurchaseOptions"
+  data-purchasable-service-slug-value="two_day_discovery_charts_development"
+>
+
+<div markdown="1" data-purchasable-service-target="buttons">
+
+<a class="cta-btn px-2 py-1" href="mailto:pascal@hey.com?subject%3DCustom%20Charts%20Developer%26body%3DHi%2C%0A%0AI%27d%20like%20to%20inquire%20about%20the%20two-day%20discovery%20exercise.">Inquire about a two-day discovery exercise</a>
+
+</div>
+
+<template data-purchasable-service-target="buttonTemplate">
+  <form action="%endpoint%" method="POST" class="block mt-2">
+    <input type="hidden" name="checkout[service_uuid]" value="%service_uuid%">
+    <button type="submit" class="cta-btn px-2 py-1">
+      Two-day Discovery Exercise, USD $%price_in_dollars%
+    </button>
+  </form>
+</template>
+
+</div>
+
+**If you'd just like quick help on a chart you're building**, I'm sometimes available on short-notice for a two-day async consultation where we exchange screenshare videos to get you unblocked. Check out [stimulus.pascal.works](https://stimulus.pascal.works) for availability. Just introduce yourself as coming from customcharts.dev.
+{: .mt-4 }
+
 ## See me build charts in public
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
 
-As I work on [supercharts.dev][supercharts], I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
+As I work on [supercharts.dev][supercharts], a way to scaffold ready-made charts in your Rails app built with Bullet Train, I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
 
-Why isn't there a chart on this page? Honestly, I couldn't think of a chart to add that wasn't lame. But with the link to Twitter just above, you can see my latest work.
-{: .text-black/50.mt-8.text-sm }
+</div>
 
 [supercharts]: https://supercharts.dev
