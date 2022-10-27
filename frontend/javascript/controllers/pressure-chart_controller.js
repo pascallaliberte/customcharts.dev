@@ -18,14 +18,17 @@ export default class extends SuperchartChartjsController {
   }
   
   static defaultCssProperties = {
-    '--animation-duration': 600, // milliseconds
+    '--animation-duration': 1200, // milliseconds
     '--axis-color': '#999',
     '--grid-color': '#eee',
     '--line-color': '#aaa',
     '--point-color': '#fff',
     '--point-stroke-color': 'transparent',
-    '--point-radius': 2,
+    '--point-radius': 4,
     '--point-border-width': 0,
+    '--warning-line-color': 'red',
+    '--today-line-color': 'red',
+    '--dead-line-color': 'red',
   }
   
   connect() {
@@ -167,63 +170,61 @@ export default class extends SuperchartChartjsController {
         autocolors: false,
         annotation: {
           annotations: {
-            // line1: {
-            //   type: 'line',
-            //   yMin: 60,
-            //   yMax: 60,
-            //   borderColor: 'rgb(255, 99, 132)',
-            //   borderWidth: 2,
-            //   z: 0,
-            // },
-            redZone: {
+            warningLine: {
               drawTime: 'beforeDatasetsDraw',
-              type: 'box',
-              xMin: 0,
-              xMax: 19,
+              type: 'line',
               yMin: 60,
-              yMax: 100,
-              backgroundColor: 'rgba(255, 99, 132, 0.10)',
-              z: 0,
-            },
-            yellowZone: {
-              drawTime: 'beforeDatasetsDraw',
-              type: 'box',
-              xMin: 0,
-              xMax: 19,
-              yMin: 50,
               yMax: 60,
-              backgroundColor: 'rgba(255, 255, 0, 0.10)',
+              borderColor: this.cssPropertyValue('--warning-line-color'),
+              borderWidth: 2,
+              borderDash: [6, 6],
               z: 0,
             },
             todayLine: {
+              drawTime: 'beforeDatasetsDraw',
               type: 'line',
-              borderColor: 'white',
-              borderWidth: 2,
-              borderDash: [6, 6],
+              borderColor: this.cssPropertyValue('--today-line-color'),
+              borderWidth: 1,
               label: {
                 backgroundColor: 'transparent',
-                content: 'Today',
+                color: this.cssPropertyValue('--label-text-color'),
+                content: 'today',
                 display: true,
-                font: font
+                font: font,
+                position: 'end',
+                xAdjust: -23,
               },
-              position: 'end',
               scaleID: 'x',
               value: 15
             },
             deadLine: {
+              drawTime: 'beforeDatasetsDraw',
               type: 'line',
-              borderColor: 'white',
-              borderWidth: 2,
-              borderDash: [6, 6],
+              borderColor: this.cssPropertyValue('--dead-line-color'),
+              borderWidth: 8,
               label: {
                 backgroundColor: 'transparent',
-                content: 'Deadline',
+                color: this.cssPropertyValue('--label-text-color'),
+                content: 'deadline',
                 display: true,
-                font: font
+                font: font,
+                position: 'end',
               },
-              position: 'end',
               scaleID: 'x',
               value: 19
+            },
+            pressureLabel: {
+              drawTime: 'beforeDatasetsDraw',
+              type: 'label',
+              xValue: 0,
+              xAdjust: 8,
+              yValue: 60,
+              yAdjust: -40,
+              rotation: 270,
+              content: ['TOO MANY'],
+              textAlign: 'left',
+              font: font,
+              color: this.cssPropertyValue('--label-text-color'),
             }
           }
         }

@@ -18,6 +18,9 @@ module.exports = {
         coast: {
           500: '#476884',
           700: '#355773'
+        },
+        rust: {
+          700: '#973c3c'
         }
       },
       fontFamily: {

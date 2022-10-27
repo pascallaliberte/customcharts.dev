@@ -1,13 +1,20 @@
 <div class="
+  -mx-10 px-4 sm:mx-0 sm:px-0
   [--sl-color-primary-600:theme('colors.sequoia.800')]
   [--sl-color-neutral-400:theme('colors.ochre.400')]
   "
   data-controller="toggle"
 >
   <div
-    class="-mx-6 my-6 p-6 bg-sequoia-800 rounded-md border border-white border-2
+    class="
     [--chart-height:200px] md:[--chart-height:300px]
     [--grid-color:theme('colors.black')]
+    [--line-color:theme('colors.sequoia.800')]
+    [--point-color:transparent]
+    [--warning-line-color:theme('colors.rust.700')]
+    [--today-line-color:theme('colors.rust.700')]
+    [--dead-line-color:theme('colors.rust.700')]
+    [--label-text-color:theme('colors.rust.700')]
     "
     data-controller="pressure-chart"
     data-pressure-chart-type-value="line"
@@ -37,10 +44,10 @@
       2,64,
       1,73,
       0,82,82
-      1,,40
-      2,,41
-      3,,42
-      4,98,43
+      1,,64
+      2,,57
+      3,,62
+      4,98,54
     </template>
     <template data-pressure-chart-target="chartjsOptions"></template>
   </div>
