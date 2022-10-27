@@ -29,6 +29,7 @@ export default class extends SuperchartChartjsController {
     '--warning-line-color': 'red',
     '--today-line-color': 'red',
     '--dead-line-color': 'red',
+    '--use-tight-layout': 'false',
   }
   
   connect() {
@@ -150,6 +151,8 @@ export default class extends SuperchartChartjsController {
       size: 12
     }
     
+    const rotationDateLines = this.cssPropertyValue('--use-tight-layout') === 'true'? 270: 0
+    
     return {
       maintainAspectRatio: false,
       animation: this.animationOptions,
@@ -189,6 +192,7 @@ export default class extends SuperchartChartjsController {
                 backgroundColor: 'transparent',
                 color: this.cssPropertyValue('--label-text-color'),
                 content: 'today',
+                rotation: rotationDateLines,
                 display: true,
                 font: font,
                 position: 'end',
@@ -206,6 +210,7 @@ export default class extends SuperchartChartjsController {
                 backgroundColor: 'transparent',
                 color: this.cssPropertyValue('--label-text-color'),
                 content: 'deadline',
+                rotation: rotationDateLines,
                 display: true,
                 font: font,
                 position: 'end',
