@@ -177,6 +177,8 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 
 </section>
 
+<section class="max-w-lg" markdown="1">
+
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
 
@@ -221,6 +223,9 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 
 As I work on [supercharts.dev][supercharts], a way to scaffold ready-made charts in your Rails app built with Bullet Train, I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
 
+</section>
+
 </div>
+
 
 [supercharts]: https://supercharts.dev
