@@ -62,7 +62,11 @@ It's time for charts to go back in the IN section.
 <a class="cta-btn text-1xl px-4 py-1 text-white no-underline" href="#availability">See when I'm available...</a>
 </div>
 
-## The project has been piling on the responsibilities...
+## The responsibilities have been piling on…
+
+For your project, you've crossed that line. Too many things are up in the air and the deadline is coming close.
+
+"If only someone could just take over the chart part"
 
 <%= render "pressure_chart" %>
 
@@ -179,6 +183,9 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 ## The secret menu
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
 
+### Something Bigger
+{: .text-1xl.md:text-2xl.font-black.uppercase }
+
 **If you'd like to partner up on a bigger project**, where getting the charts right will create revenue or reduce costs, will depend on a strong ability to craft good user experiences and understanding buyer motivation (jobs-to-be-done)...
 
 <div markdown="1"
@@ -204,8 +211,10 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 
 </div>
 
+### Or, something smaller
+{: .mt-8.font-black.uppercase }
+
 **If you'd just like quick help on a chart you're building**, I'm sometimes available on short-notice for a two-day async consultation where we exchange screenshare videos to get you unblocked. Check out [stimulus.pascal.works](https://stimulus.pascal.works) for availability. Just introduce yourself as coming from customcharts.dev.
-{: .mt-4 }
 
 ## See me build charts in public
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
