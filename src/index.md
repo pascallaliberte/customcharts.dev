@@ -213,6 +213,14 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 
 </div>
 
+<div class="bg-white/30 p-8 my-4 -mx-4" markdown="1">
+**Justin Ménard, CEO of [LISTedTECH.com](https://listedtech.com), about us working together:**
+{: .mb-2 }
+
+> "When we were looking for someone to build our portal (where our customers access charts on Ed Tech products), we turned to Pascal to put our idea into action. Pascal understood our concept, translated our vision into an app with charts and a way for customers to purchase a subscription. Now we have a place to showcase and sell our data."
+{: .border.border-0.border-l-4.border-coast-500.pl-4.mt-2.ml-4 }
+</div>
+
 ### Or, something smaller
 {: .mt-8.font-black.uppercase }
 
