@@ -7,7 +7,7 @@ layout: default
 # Custom Charts Developer
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800 }
 
-![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://twitter.com/pascallaliberte), maker of [supercharts.dev][supercharts]
+![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://ruby.social/@pascallaliberte), maker of [supercharts.dev][supercharts]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
 Availabilities in the next few weeks
@@ -229,7 +229,7 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 ## See me build charts in public
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
 
-As I work on [supercharts.dev][supercharts], a way to scaffold ready-made charts in your Rails app built with Bullet Train, I'm [posting on Twitter about my progress](https://twitter.com/search?q=chart%20(from%3Apascallaliberte)&src=typed_query&f=live). See you there?
+As I work on [supercharts.dev][supercharts], a way to scaffold ready-made charts in your Rails app built with Bullet Train, I'm [posting on Mastodon about my progress](https://ruby.social/@pascallaliberte). See you there?
 
 </section>
 
