@@ -7,7 +7,7 @@ layout: default
 # Custom Charts Developer
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800 }
 
-![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://ruby.social/@pascallaliberte), maker of [supercharts.dev][supercharts]
+![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://ruby.social/@pascallaliberte), maker of [supercharts.dev][supercharts] and [chartdescriptions.com][chartdescriptions]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
 Availabilities in the next few weeks
@@ -100,7 +100,9 @@ For one week that your pre-purchase (availabilities listed below), I'll be aroun
 * You drive the decisions, I implement and I make it good
 * We will communicate over GitHub issues and a GitHub project
 * I'll have a private URL previewing the chart
-* You'll provide a sample of the data, or I'll prepare some random data (say, to match a sketch you provide)
+* You'll provide a sample of the data, or I'll prepare some mock data (say, to match a sketch you provide)
+* You'll get the benefits of speed
+* If we prioritize it, we can also work on adding automatic text descriptions of the generated charts
 
 </section>
 
@@ -171,7 +173,7 @@ Your main involvement: provide to-dos and review the work.
 
 ### Some fine print
 
-There are industries I won't serve. I won't serve the adult content industry. I won't serve the cryptocurrency/NFT industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work.
+There are industries I won't serve. I won't serve the adult content industry. I won't serve the cryptocurrency/NFT industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work. I might be using LLMs (AIs) but won't share your data with the LLM without your consent.
 
 Also, I won't sign an NDA or a non-compete for my work in this by-the-week service.
 
@@ -237,3 +239,4 @@ As I work on [supercharts.dev][supercharts], a way to scaffold ready-made charts
 
 
 [supercharts]: https://supercharts.dev
+[chartdescriptions]: https://chartdescriptions.com
