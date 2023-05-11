@@ -7,10 +7,10 @@ layout: default
 # Custom Charts Developer
 {: .text-4xl.md:text-6xl.font-black.text-sequoia-800 }
 
-![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://ruby.social/@pascallaliberte), maker of [supercharts.dev][supercharts] and [chartdescriptions.com][chartdescriptions]
+![Avatar of Pascal](/images/pascal-avatar.jpg){: .rounded-full.w-14.block.sm:inline.mb-2.sm:mb-0.border.border-2.border-white } [Pascal Laliberté](https://ruby.social/@pascallaliberte) of [supercharts.dev][supercharts] and [chartdescriptions.com][chartdescriptions]
 {: .text-2xl.md:text-3xl.font-semibold.text-black.mt-3 }
 
-Availabilities in the next few weeks
+For Hotwire-based Rails apps.
 {: .text-1xl.md:text-2xl.font-semibold.text-black/20.mt-3 }
 
 <div class="mt-4">
@@ -41,50 +41,26 @@ But now, "later" is coming up "soon".
 
 ## "I just have too many specialties to master"
 
-On your project, you have to wear all the hats. You go deep on all these topics. But your involvement with charts has stayed superficial. No choice!
+On your project, you have to wear all the hats. You go deep on all these topics. But **your involvement with charts has stayed superficial**. No choice!
 
-### What's been IN
-
-* Domain modelling
-* UI, Flows, Onboarding
-* Testing, CI
-* DB Performance
-* Product-Market Fit
-* Landing Pages, Content Strategy
-
-### What's been OUT
-
-* Charts: styled, performant, clear, well-coded
-
-It's time for charts to go back in the IN section.
-
-<div class="mt-4">
-<a class="cta-btn text-1xl px-4 py-1 text-white no-underline" href="#availability">See when I'm available...</a>
-</div>
-
-## The responsibilities have been piling on…
-
-For your project, you've crossed that line. Too many things are up in the air and the deadline is coming close.
+You'be been sweating all the other important aspects of your project: Domain Modeling, UI, Testing, DB Performance, Landing Pages, and Product-Market Fit.
 
 "If only someone could just take over the chart part"
 
+### The responsibilities have been piling on…
+
 <%= render "pressure_chart" %>
 
-## Too many "I'll just"
+## Too many "I could just"
 
-You've crossed those first chart-related to-dos off your list, but there were too many "I'll just"
+You've crossed those first chart-related to-dos off your list, but there were too many "I could just"
 
-* "I'll just use chart.js, **but the animations are off-putting**"
-* "I'll just load that data set on a view property, **but it's slowing down the time-to-first-byte**"
-* "I'll just settle for a multi-line chart **but there should be a clearer way to present this**"
+* "I could just use ChatGPT, **but it regresses to the mean**. I want something that has _style_."
+* "I could just use chart.js, **but the animations are off-putting**"
+* "I could just load that data set on a view property, **but it's slowing down the time-to-first-byte**"
+* "I could just settle for a multi-line chart **but there should be a clearer way to present this**"
 
-Your high taste is found everywhere throughout your app, but the charts don't match that taste.
-
-## You're ready to fuss on the details, but the learning curve...
-
-* If only you had **someone to help you learn the ropes**, just more quickly...
-* If only you had **the code for one perfect chart**, you could do the same for all the others...
-* If only you had **something pretty close that you could tweak**...
+**Your high taste** is found everywhere throughout your app, but the charts don't match that taste.
 
 ---
 {: .h-0.border-white.border-t-2.md:border-t-4.max-w-xs.my-6.md:my-16 }
@@ -100,7 +76,6 @@ For one week that your pre-purchase (availabilities listed below), I'll be aroun
 * You drive the decisions, I implement and I make it good
 * We will communicate over GitHub issues and a GitHub project
 * I'll have a private URL previewing the chart
-* You'll provide a sample of the data, or I'll prepare some mock data (say, to match a sketch you provide)
 * You'll get the benefits of speed
 * If we prioritize it, we can also work on adding automatic text descriptions of the generated charts
 
@@ -173,7 +148,7 @@ Your main involvement: provide to-dos and review the work.
 
 ### Some fine print
 
-There are industries I won't serve. I won't serve the adult content industry. I won't serve the cryptocurrency/NFT industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work. I might be using LLMs (AIs) but won't share your data with the LLM without your consent.
+There are industries I won't serve. I won't serve the adult content industry. I won't serve the cryptocurrency/NFT industry either. Black market? No. If I decide I can't work for your industry, you'll get refunded and I stop the work. I will be using LLMs (AIs) but won't share your data with the LLM without your consent.
 
 Also, I won't sign an NDA or a non-compete for my work in this by-the-week service.
 
@@ -186,6 +161,9 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 
 ## The secret menu
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
+
+If the [above one-week-sized blocks](#availability) aren't your preference, I can accommodate:
+{: .mb-4 }
 
 ### Something Bigger
 {: .text-1xl.md:text-2xl.font-black.uppercase }
@@ -226,7 +204,7 @@ Also, I won't sign an NDA or a non-compete for my work in this by-the-week servi
 ### Or, something smaller
 {: .mt-8.font-black.uppercase }
 
-**If you'd just like quick help on a chart you're building**, I'm sometimes available on short-notice for a two-day async consultation where we exchange screenshare videos to get you unblocked. Check out [stimulus.pascal.works](https://stimulus.pascal.works) for availability. Just introduce yourself as coming from customcharts.dev.
+**If you'd just like quick help on a chart you're building**, I'm sometimes available on short-notice for a two-day async consultation where we exchange screenshare videos to get you unblocked. [Send me a video of what you need help with](https://zipmessage.com/pascallaliberte) and I'll let you know if I'm available for a 2-day back-and-forth video consult for USD $625. Usually in the next day or two.
 
 ## See me build charts in public
 {: .text-1xl.md:text-2xl.font-black.text-sequoia-800.mt-8.mb-4.uppercase }
